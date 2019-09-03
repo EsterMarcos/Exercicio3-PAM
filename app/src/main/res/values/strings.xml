@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Exercicio3</string>
+    <string name="qtChopp">Chopp:</string>
+    <string name="qtPizza">Pizza:</string>
+    <string name="qtRecheio">Recheio:</string>
+    <string name="qtPessoas">Pessoas:</string>
+    <string name="consumo">Consumo:</string>
+    <string name="servicos">Serviços:</string>
+    <string name="total">Total:</string>
+    <string name="ppessoa">Por pessoa:</string>
+</resources>

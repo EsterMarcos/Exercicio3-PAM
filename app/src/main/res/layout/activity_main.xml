@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onCalcular"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <EditText
+        android:id="@+id/txtChopp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtPizza"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/txtRecheio"
+        app:layout_constraintStart_toStartOf="@+id/txtRecheio"
+        app:layout_constraintTop_toBottomOf="@+id/txtChopp" />
+
+    <EditText
+        android:id="@+id/txtRecheio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/txtPessoas"
+        app:layout_constraintStart_toStartOf="@+id/txtPessoas"
+        app:layout_constraintTop_toBottomOf="@+id/txtPizza" />
+
+    <EditText
+        android:id="@+id/txtPessoas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRecheio"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lblChopp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:text="Chopp:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtChopp"
+        app:layout_constraintEnd_toEndOf="@+id/lblPizza"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblPizza"
+        tools:text="@string/qtChopp" />
+
+    <TextView
+        android:id="@+id/lblPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtPizza"
+        app:layout_constraintStart_toStartOf="@+id/lblRecheio"
+        tools:text="@string/qtPizza" />
+
+    <TextView
+        android:id="@+id/lblRecheio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recheio:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtRecheio"
+        app:layout_constraintStart_toStartOf="@+id/lblPessoas"
+        tools:text="@string/qtRecheio" />
+
+    <TextView
+        android:id="@+id/lblPessoas"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="Pessoas:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtPessoas"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/qtPessoas" />
+
+    <TextView
+        android:id="@+id/lblServico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Serviços:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtServicos"
+        app:layout_constraintEnd_toStartOf="@+id/txtServicos"
+        app:layout_constraintHorizontal_bias="0.369"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/servicos" />
+
+    <TextView
+        android:id="@+id/lblTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="total:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtTotal"
+        app:layout_constraintEnd_toStartOf="@+id/txtppessoa"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/total" />
+
+    <TextView
+        android:id="@+id/lblpPessoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="Por pessoa:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtppessoa"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/ppessoa" />
+
+    <TextView
+        android:id="@+id/lblConsumo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:text="Consumo:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtConsumo"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/consumo" />
+
+    <TextView
+        android:id="@+id/txtConsumo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="______"
+        app:layout_constraintEnd_toEndOf="@+id/txtServicos"
+        app:layout_constraintStart_toEndOf="@+id/lblConsumo"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+    <TextView
+        android:id="@+id/txtServicos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="______"
+        app:layout_constraintEnd_toEndOf="@+id/txtTotal"
+        app:layout_constraintTop_toBottomOf="@+id/txtConsumo" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:text="______"
+        app:layout_constraintEnd_toEndOf="@+id/txtppessoa"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblTotal"
+        app:layout_constraintTop_toBottomOf="@+id/txtServicos" />
+
+    <TextView
+        android:id="@+id/txtppessoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="24dp"
+        android:text="______"
+        app:layout_constraintStart_toEndOf="@+id/lblpPessoa"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotal" />
+
+</android.support.constraint.ConstraintLayout>
